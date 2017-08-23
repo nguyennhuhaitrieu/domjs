@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo DOM JS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var boxA = document.getElementById("boxA");
+			console.log(boxA);
+
+			var nodeAttr = boxA.attributes;
+			console.log(nodeAttr.getNamedItem("title"));
+			console.log(nodeAttr.getNamedItem("title").value);
+		}
+	</script>
+</head>
+<body>
+	<div class="boxA" id="boxA" style="margin: 20px auto" title="Tìm hiểu thuộc tính của node">
+		Tìm hiểu thuộc tính của node
+	</div>
+		
+</body>
+</html>
