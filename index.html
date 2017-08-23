@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo DOM JS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var title 	= document.getElementById("title");
+			console.log(title);
+
+			var author  = document.getElementById("author");
+			console.log(author);
+
+			var website = document.getElementById("website");
+			console.log(website);
+
+			var boxA    = document.getElementById("boxA") ;
+			console.log(boxA);
+		}
+	</script>
+</head>
+<body>
+	<div class="boxA" id="boxA">
+		<h1 id="title" class="title">Thuộc tính của Node</h1>
+		<div id="author">Zend VN group</div>
+		<div id="website">www.zend.vn</div>
+	</div>
+</body>
+</html>
